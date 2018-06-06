@@ -4,6 +4,8 @@ import java.util.Scanner;
 
 public class VirtualPetShelterAPP {
 
+	private static final Map pets = null;
+
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 
@@ -57,10 +59,10 @@ public class VirtualPetShelterAPP {
 					System.out.println("please type name pet");
 					String userAction = input.nextLine();
 
-					// for (Map.Entry<String, String> entry : pets.entrySet()) {
-					// System.out.println("The pets's name is " + entry.getKey());
-					// System.out.println("The pet's description is " + entry.getValue());
-					// }
+//					 for (Map.Entry<String, String> entry : pets.entrySet()) {
+//						 System.out.println("The pets's name is " + entry.getKey());
+//						 System.out.println("The pet's description is " + entry.getValue());
+//					 }
 					Shelter.playWithAPet(userAction);
 					System.out.println("You played with " + userAction + " who is now a happy animal! \n");
 
